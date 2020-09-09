@@ -11,6 +11,12 @@ public class Killer {
 	public static void getMutant(){
 		mutant = MutantMaker.getMutant();
 	}
+	
+	@Test
+	public void testFirstExample() {
+		String[] words = {"a", "at", "and"};
+		assertEquals("and", mutant.thirdShortest(words));
+	}
 
 
 }
